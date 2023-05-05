@@ -69,8 +69,11 @@ img {
 /* Bottom Card */
 
 .card.bottom-card {
+ 
   background-color: #fff;
-  padding: 32px 40px 40px 40px;
+  padding: 32px 20px 40px 20px;
+  overflow: visible;
+
 }
 
 
@@ -80,6 +83,8 @@ img {
   align-items: flex-end;
   gap: 18px;
   padding-top: 66px;
+  overflow: visible;
+
 }
 
 .beam {
@@ -98,6 +103,8 @@ img {
 .beam-container {
   position: relative;
   text-align: center;
+  z-index: 3;
+  overflow: visible;
 }
 
 .beam-card {
@@ -115,8 +122,10 @@ img {
   display: none;
   margin: 0 auto;
   color: #fff;
-  z-index: 100;
+  z-index: 3;
 }
+
+
 
 .beam:hover {
   background: var(--clr-400);
@@ -135,6 +144,7 @@ img {
   justify-content: space-between;
   gap: 18px;
   text-align: center;
+
 }
 
 .day {
@@ -253,6 +263,12 @@ footer {
     max-width: 540px;
   }
 
+  .total-amount {
+    line-height: 62.5px;
+    font-weight: 700;
+    font-size: 35px;
+  }
+
   .card.top-card {
     padding: 27px 39px 25px 32px;
   }
@@ -283,6 +299,14 @@ footer {
     padding: 10px;
     font-size: 14px;
   }
+
+  .card-percentage > p {
+    font-size: 16px;
+  }
+
+  .card-results small {
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 1440px) {
@@ -293,6 +317,20 @@ footer {
 
   .beam-card {
     width: 75px;
+    font-size: 18px;
+  }
+
+  .total-amount {
+    line-height: 62.5px;
+    font-weight: 700;
+    font-size: 48px;
+  }
+
+  .card-results small {
+    font-size: 18px;
+  }
+
+  .card-percentage > p {
     font-size: 18px;
   }
 }

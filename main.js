@@ -84,6 +84,7 @@ function highlightBeam(e) {
 function addEventListeners() {
     beams.forEach(beam => {
         beam.addEventListener('click', showData);
+        beam.addEventListener('mouseover', showData)
     });
     beams.forEach(beam => {
         beam.addEventListener('click', highlightBeam);
