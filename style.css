@@ -188,6 +188,10 @@ footer {
     max-width: 92%;
   }
 
+  .top-card .amount {
+    font-weight: 700;
+  }
+
   .card.bottom-card {
     padding: 24px 20px;
   }
@@ -247,6 +251,19 @@ footer {
 @media (min-width: 700px) {
   .container {
     max-width: 540px;
+  }
+
+  .card.top-card {
+    padding: 27px 39px 25px 32px;
+  }
+
+  .top-card .amount {
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  .card-heading {
+    font-size: 32px;
   }
 
   .spending-beams {
