@@ -171,10 +171,13 @@ img {
   font-size: 48px;
 }
 
+
 .card-percentage > p {
   line-height: 23.5px;
   text-align: right;
+  margin-top: 31px;
 }
+
 
 footer {
   margin-top: 20px;
@@ -277,6 +280,8 @@ footer {
   .bottom-card .beam {
     max-width: 50px;
   }
+
+  
 
   .card.bottom-card {
     padding: 38px 40px 40px 40px;
