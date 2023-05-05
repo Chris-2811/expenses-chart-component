@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+
+:root {
+  /* Primary */
+  --soft-red: hsl(10, 79%, 65%);
+  --cyan: hsl(186, 34%, 60%);
+
+  /* Neural */
+  --clr-100: hsl(25, 47%, 15%);
+  --clr-200: hsl(28, 10%, 53%);
+  --clr-300: hsl(27, 66%, 92%);
+  --clr-400: hsla(10, 100%, 76%, 1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--clr-300);
+  font-family: "DM Sans", sans-serif;
+  min-height: 100vh;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  color: hsl(10, 79%, 65%);
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 540px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  border-radius: 20px;
+}
+
+/* Top Card */
+
+.card.top-card {
+  background: var(--soft-red);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 27px 39px 25px 32px;
+}
+
+.top-card .balance {
+  color: #fff;
+}
+
+.top-card .balance .amount {
+  margin-top: 8px;
+}
+
+/* Bottom Card */
+
+.card.bottom-card {
+  background-color: #fff;
+  padding: 32px 40px 40px 40px;
+}
+
+
+.spending-beams {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 18px;
+  padding-top: 66px;
+}
+
+.beam {
+  border-radius: 5px;
+  width: 50px;
+  height: 100px;
+  min-width: 33px;
+  max-width: 50px;
+  background-color: var(--soft-red);
+}
+
+.beam.active {
+  background-color: #ff9b86;
+}
+
+.beam-container {
+  position: relative;
+  text-align: center;
+}
+
+.beam-card {
+  position: absolute;
+  height: 40px;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px;
+  background-color: #333;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 23.4px;
+  display: none;
+  margin: 0 auto;
+  color: #fff;
+  z-index: 100;
+}
+
+.beam:hover {
+  background: var(--clr-400);
+  cursor: pointer;
+}
+
+.card-diagram {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* Days */
+
+.card-days {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  text-align: center;
+}
+
+.day {
+  width: 14.2857%;
+  color: var(--clr-200);
+  font-size: 15px;
+  line-height: 20px;
+}
+
+/* Divider */
+
+.card-divider {
+  background-color: var(--clr-300);
+  height: 2px;
+  width: 100%;
+  margin-block: 32px;
+}
+
+/* Results */
+
+.card-results {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-results small {
+  line-height: 23.5px;
+  color: var(--clr-200);
+}
+
+.total-amount {
+  line-height: 62.5px;
+  font-weight: 700;
+  font-size: 48px;
+}
+
+.card-percentage > p {
+  line-height: 23.5px;
+  text-align: right;
+}
+
+footer {
+  margin-top: 20px;
+}
+
+/* Media queries */
+
+@media (min-width: 375px) {
+  .container {
+    max-width: 92%;
+  }
+
+  .card.bottom-card {
+    padding: 24px 20px;
+  }
+
+  .card.top-card {
+    padding: 20px 24px 22px 20px;
+  }
+
+  .card-divider {
+    margin-block: 24px;
+  }
+
+  .spending-beams {
+    gap: 12px;
+  }
+
+  .beam {
+    max-width: 33px;
+  }
+
+  .beam-card {
+    width: 50px;
+    font-size: 11px;
+    padding: 8px;
+  }
+
+  .card-heading {
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  .card-results small {
+    line-height: 19.5px;
+    font-size: 15px;
+    color: var(--clr-200);
+  }
+
+  .spending-beams {
+    padding-top: 54px;
+  }
+
+  .total-amount {
+    line-height: 39px;
+    font-weight: 700;
+    font-size: 30px;
+  }
+
+  .card-percentage > p {
+    line-height: 19.5px;
+    font-size: 15px;
+    text-align: right;
+    font-weight: 700;
+  }
+
+}
+
+@media (min-width: 700px) {
+  .container {
+    max-width: 540px;
+  }
+
+  .spending-beams {
+    padding-top: 66px;
+  }
+
+  .bottom-card .beam {
+    max-width: 50px;
+  }
+
+  .card.bottom-card {
+    padding: 32px 40px 40px 40px;
+  }
+
+  .beam-card {
+    width: 65px;
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 540px;
+    min-width: 540px;
+  }
+
+  .beam-card {
+    width: 75px;
+    font-size: 18px;
+  }
+}
