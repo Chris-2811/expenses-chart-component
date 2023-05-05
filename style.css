@@ -72,8 +72,10 @@ img {
 }
 
 .logo {
-  margin-top: 
+  margin-top: -1px;
 }
+
+
 
 /* Bottom Card */
 
@@ -292,7 +294,7 @@ footer {
   
 
   .card.bottom-card {
-    padding: 35px 40px 41px 40px;
+    padding: 36px 40px 41px 40px;
   }
 
   .beam-card {
