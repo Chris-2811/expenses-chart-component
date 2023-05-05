@@ -68,7 +68,7 @@ img {
 }
 
 .top-card .balance .amount {
-  margin-top: 8px;
+  margin-top: 7px;
 }
 
 .logo {
@@ -271,7 +271,7 @@ footer {
   }
 
   .card.top-card {
-    padding: 27px 39px 25px 32px;
+    padding: 26px 39px 25px 32px;
   }
 
   .top-card .amount {
