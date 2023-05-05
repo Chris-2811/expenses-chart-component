@@ -49,6 +49,10 @@ img {
   border-radius: 20px;
 }
 
+.logo {
+  max-height: 48px;
+}
+
 /* Top Card */
 
 .card.top-card {
@@ -65,6 +69,10 @@ img {
 
 .top-card .balance .amount {
   margin-top: 8px;
+}
+
+.logo {
+  margin-top: 
 }
 
 /* Bottom Card */
@@ -284,7 +292,7 @@ footer {
   
 
   .card.bottom-card {
-    padding: 36px 40px 41px 40px;
+    padding: 35px 40px 41px 40px;
   }
 
   .beam-card {
