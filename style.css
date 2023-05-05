@@ -74,6 +74,8 @@ img {
   background-color: #fff;
   padding: 32px 20px 40px 20px;
   overflow: visible;
+  position: relative;
+
 
 }
 
@@ -84,7 +86,7 @@ img {
   align-items: flex-end;
   gap: 18px;
   padding-top: 66px;
-  overflow: visible;
+  position: relative;
 
 }
 
@@ -97,15 +99,21 @@ img {
   background-color: var(--soft-red);
 }
 
+.day {
+  margin-top: 8px;
+}
+
 .beam.active {
   background-color: #ff9b86;
 }
 
 .beam-container {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
-  z-index: 3;
-  overflow: visible;
+  position: relative;
+
 }
 
 .beam-card {
@@ -138,18 +146,7 @@ img {
   overflow: hidden;
 }
 
-/* Days */
-
-.card-days {
-  display: flex;
-  justify-content: space-between;
-  gap: 18px;
-  text-align: center;
-
-}
-
 .day {
-  width: 14.2857%;
   color: var(--clr-200);
   font-size: 15px;
   line-height: 20px;
