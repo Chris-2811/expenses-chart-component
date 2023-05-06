@@ -69,26 +69,14 @@ async function adjustHeightOfBeams() {
 
 }
 
-function highlightBeam(e) {
-    console.log(e.target)
-
-    beams.forEach(beam => {
-        beam.classList.remove('active')
-        e.target.classList.add('active')
-    })
-
-}
-
-
 
 function addEventListeners() {
     beams.forEach(beam => {
         beam.addEventListener('click', showData);
-        beam.addEventListener('mouseover', showData)
+        beam.addEventListener('mouseover', showData);
     });
-    beams.forEach(beam => {
-        beam.addEventListener('click', highlightBeam);
-    });
+   
+
 
     
     
